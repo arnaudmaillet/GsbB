@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Formulaire de connexion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="img/gsb_logo.png">
+
+    <link rel="stylesheet" href="css/webfonts/all.min.css">
+    <link rel="stylesheet" href="composant/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="composant/confirm/jquery-confirm.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="composant/jquery.js"></script>
+    <script src="composant/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="composant/confirm/jquery-confirm.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+<div id="menu"></div>
+
+<div id="login" class="centre">
+    <div class="container p-x">
+        <form name="connexion" method="post" action="pageFichefrais/index.php">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Login</h3>
+                            <div class="form-group">
+                                <label for="Nom" class="text-info">Nom:</label><br>
+                                <input type="text" name="Nom" id="Nom" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Mot de passe:</label><br>
+                                <input type="text" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group text-center mt-5">
+                                <input type="Connexion" name="Connexion" class="btn btn-info btn-md" value="Connexion" onclick="window.location.href='../GSBSite/pageFichefrais/index.php'">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="pied"></div>
+
+</body>
+</html>

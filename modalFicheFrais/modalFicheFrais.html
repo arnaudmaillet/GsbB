@@ -1,0 +1,123 @@
+<div class="modal fade modalFicheFrais" tabindex="-1" role="dialog" aria-labelledby="LargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Fiche de frais en cours</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!--<div class="container-fluid">
+                    <div class="row" style="padding: 20px">
+                        <div class="col-12 col-md-10">
+                            <p>Date de création : </p>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <p>Fiche numéro</p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px">
+                        <div class="col-12">
+                            <p>Tableau des frais forfaitaires :</p>
+                            <table class="table table-bordered">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Montant unitaire</th>
+                                    <th scope="col">Quantité</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Nuité(s)</th>
+                                    <td>
+                                        <input  class="text-center" type="text" id="prenom" name="lastname" placeholder="mark">
+                                    </td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Repas</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Distance(km)</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>-->
+                <div id="modalfichefrais"></div>
+                <div class="container-fluid" style="padding-top: 50px">
+                    <div class="row" style="padding: 20px">
+                        <div class="col-12 col-md-10">
+                            <p>Autres frais :</p>
+                            <!--<input id="dateAutreFrais" class="form-control" type="text">-->
+                        </div>
+                        <div class="col-12 col-md-2 text-center">
+                            <!--<button type="button" class="btn btn-outline-info" id="addrow">+</button>-->
+                            <button type="button" class="btn btn-outline-info" id="btnAjouter">ajouterFrais</button>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <p>Inserer autre frais :</p>
+                        <div class="row" style="padding: 20px">
+                            <div class="col-2">
+                                <p>Date :</p>
+                            </div>
+                            <div class="col-2">
+                                <input id="date" type="text" class="form-control text-center" name=""/>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 20px">
+                            <div class="col-2">
+                                <p>Libelle :</p>
+                            </div>
+                            <div class="col-2">
+                                <input id="libelle" type="text" class="form-control text-center" name=""/>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 20px">
+                            <div class="col-2">
+                                <p>Prix :</p>
+                            </div>
+                            <div class="col-2">
+                                <input id="montant" type="text" class="form-control text-center" name=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="msg"></div>
+                    <div class="row" style="padding: 20px">
+                        <div class="col-12">
+                            <table id="myTable" class="table order-list text-center table-bordered">
+                                <thead class="thead-light">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Libelle</th>
+                                    <th>Montant</th>
+                                    <th>Etat</th>
+                                </tr>
+                                </thead>
+                                <tbody id="fraishorsforfait">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Sauvegarder</button>
+            </div>
+        </div>
+    </div>
+</div>
